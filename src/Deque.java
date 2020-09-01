@@ -73,7 +73,7 @@ public class Deque {
         }
         System.out.print(node.data);
 
-        System.out.println();
+        System.out.println(" ");
     }
 
     public void push(int data) {
@@ -109,10 +109,12 @@ public class Deque {
     }
 
     public void pushLeft(int data) {
+        System.out.println("Pushing to Left");
         insertAtStart(data);
     }
 
     public void pushRight(int data) {
+        System.out.println("Pushing to Right");
         enqueue(data);
     }
 
@@ -124,5 +126,8 @@ public class Deque {
     public void popRight() {
         System.out.println("Popping from Right");
         deleteAt(size()-1);
+    }
+    public void printSize() {
+        System.out.println("Size of Deque: " + size());
     }
 }
