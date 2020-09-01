@@ -115,4 +115,14 @@ public class Deque {
     public void pushRight(int data) {
         enqueue(data);
     }
+
+    public void popLeft() {
+        System.out.println("Popping from Left");
+        deleteAt(0);
+    }
+
+    public void popRight() {
+        System.out.println("Popping from Right");
+        deleteAt(size()-1);
+    }
 }

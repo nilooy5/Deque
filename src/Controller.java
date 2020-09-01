@@ -18,5 +18,11 @@ public class Controller {
 
         deque.show();
         System.out.println("Size of Deque: " + deque.size());
+        deque.popLeft();
+
+        deque.show();
+        deque.popRight();
+
+        deque.show();
     }
 }
